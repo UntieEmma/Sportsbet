@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Sports Platform</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url('images/fancode-acquires-sports-research-platform-fanduniya.jpg');
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+        }
+        header {
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.5); 
+            text-align: center;
+            animation: fadeInDown 1s ease-out; 
+        }
+        @keyframes fadeInDown {
+            0% {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        nav {
+            text-align: center;
+            margin-top: 20px;
+        }
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            padding: 10px 20px;
+            margin: 0 10px;
+            border-radius: 5px;
+            background-color: rgba(255, 255, 255, 0.3);
+            position: relative;
+            transition: background-color 0.3s ease;
+        }
+        nav a:hover {
+            background-color: rgba(255, 255, 255, 0.5); 
+        }
+        nav a:not(:last-child)::after {
+            content: '•'; 
+            margin-left: 5px;
+        }
+        section {
+            padding: 50px;
+            text-align: center;
+            animation: fadeInUp 1s ease-out;
+            color: whitesmoke;
+        }
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        h2 {
+            margin-bottom: 20px;
+            color: burlywood; 
+        }
+        p {
+            margin-bottom: 20px;
+            font-size: 18px;
+        }
+        footer {
+            background-color: rgba(0, 0, 0, 0.5); 
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }        
+        form {
+            margin-top: 20px;
+        }
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            background-color: gold;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        input[type="submit"]:hover {
+            background-color: goldenrod;
+        }
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            color: whitesmoke;
+        }
+        .contact-info > div {
+            margin: 0 10px;
+        }
+        .contact-info p {
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Gbets Lesotho</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="catalogue.html">Catalog</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<section>
+    <h2>Get in Touch</h2>
+    <p>Have questions or feedback? Reach out to us using the form below:</p>
+    <form action="#" method="post">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+        <input type="submit" value="Send Message">
+    </form>
+</section>
+
+<div class="contact-info">
+    <div>
+        <h3>Email</h3><a href="maphekoramotete0@gmail.com"><img src="images/gmail.jpg" width="30"></a>
+    </div>
+    <div>
+        <h3>Physical Address</h3>
+        <p>510 Lake Site, Maseru, Lesotho</p>
+    </div>
+    <div>
+        <h3>Call</h3>
+        <p>+266 62588654</p>
+    </div>
+    <div>
+        <h3>Social-media</h3>
+        <a href="https://www.facebook.com/profile.php?id=100034831249146"><img src="images/facebook.png" width="30"></a>
+        
+    </div>
+    
+</div>
+
+<footer>
+    <p>&copy; 2024 Sports Platform. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

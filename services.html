@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Sports Platform</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url('images/fancode-acquires-sports-research-platform-fanduniya.jpg');
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+        }
+        header {
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+            text-align: center;
+            animation: fadeInDown 1s ease-out; 
+        }
+        @keyframes fadeInDown {
+            0% {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        nav {
+            text-align: center;
+            margin-top: 20px;
+        }
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            padding: 10px 20px;
+            margin: 0 10px;
+            border-radius: 5px;
+            background-color: rgba(255, 255, 255, 0.3); 
+            position: relative;
+            transition: background-color 0.3s ease;
+        }
+        nav a:hover {
+            background-color: rgba(255, 255, 255, 0.5); 
+        }
+        nav a:not(:last-child)::after {
+            content: '•'; 
+            margin-left: 5px;
+        }
+        section {
+            padding: 50px;
+            text-align: center;
+            animation: fadeInUp 1s ease-out;
+            color: whitesmoke;
+        }
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        h2 {
+            margin-bottom: 20px;
+            color: burlywood;
+        }
+        h3{
+            color: burlywood;
+        }
+        p {
+            margin-bottom: 20px;
+            font-size: 18px;
+        }
+        footer {
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        article {
+            opacity: 0;
+            animation-duration: 1s;
+            animation-fill-mode: forwards;
+            animation-timing-function: ease;
+        }
+        .slide-from-left {
+            animation-name: slideFromLeft;
+            animation-delay: 0.5s; 
+        }
+        .slide-from-right {
+            animation-name: slideFromRight;
+            animation-delay: 0.5s; 
+        }
+        @keyframes slideFromLeft {
+            0% {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        @keyframes slideFromRight {
+            0% {
+                opacity: 0;
+                transform: translateX(50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Gbets Lesotho</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="catalogue.html">Catalog</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<section>
+    <h2>Our Services</h2>
+    <p>We offer a wide range of services to cater to the diverse needs of sports enthusiasts:</p>
+    <article class="slide-from-left">
+        <h3>Sports Betting</h3>
+        <p>Experience the thrill of sports betting on our platform. We provide real-time odds, secure payment options, and comprehensive coverage of sports events.</p>
+    </article>
+    <article class="slide-from-right">
+        <h3>Live Streaming</h3>
+        <p>Watch your favorite sports events live on our platform. We offer high-quality live streaming services for various sports including football, basketball, tennis, and more.</p>
+    </article>
+    <article class="slide-from-left">
+        <h3>Expert Analysis</h3>
+        <p>Get expert analysis and insights on sports events from our team of analysts. Stay informed and make informed betting decisions with our expert opinions.</p>
+    </article>
+</section>
+
+<footer>
+    <p>&copy; 2024 Sports Platform. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
